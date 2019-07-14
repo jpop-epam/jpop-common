@@ -8,7 +8,7 @@ public class ErrorObject implements Serializable {
 
 	private String message;
 	private int errorCode;
-	private String errorDate;
+	private String errorTime;
 
 	public String getMessage() {
 		return message;
@@ -26,12 +26,12 @@ public class ErrorObject implements Serializable {
 		this.errorCode = errorCode;
 	}
 
-	public String getErrorDate() {
-		return errorDate;
+	public String getErrorTime() {
+		return errorTime;
 	}
 
-	public void setErrorDate(String errorDate) {
-		this.errorDate = errorDate;
+	public void setErrorTime(String errorTime) {
+		this.errorTime = errorTime;
 	}
 
 }

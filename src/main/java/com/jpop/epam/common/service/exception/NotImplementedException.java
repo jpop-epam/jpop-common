@@ -1,18 +1,23 @@
 package com.jpop.epam.common.service.exception;
 
-import com.jpop.epam.common.service.constants.ApplicationCommonConstants;
+import org.springframework.http.HttpStatus;
 
-public class NotImplementedException extends RuntimeException implements ApplicationError {
+import com.jpop.epam.common.constants.ApplicationCommonConstants;
+
+public class NotImplementedException extends ApplicationError {
 
 	private static final long serialVersionUID = 5445277604967202095L;
 	
 	private final String message;
 	private final int errorCode;
+	private final HttpStatus httpStatus;
+	private final String errorTime;
 	
 	public NotImplementedException() {
-		super();
-		this.message = "This functionality has not been implemented yet.";
-		this.errorCode = 1000;
+		this.message = ApplicationCommonConstants.NOT_IMPLEMENTED_ERROR_MESSAGE;
+		this.errorCode = ApplicationCommonConstants.NOT_IMPLEMENTED_ERROR_CODE;
+		this.httpStatus = HttpStatus.UNPROCESSABLE_ENTITY;
+		this.errorTime = ApplicationCommonConstants.getCurrentDateAsString();
 	}
 	
 	public int getErrorCode() {
@@ -26,7 +31,12 @@ public class NotImplementedException extends RuntimeException implements Applica
 
 	@Override
 	public String getErrorTime() {
-		return ApplicationCommonConstants.getCurrentDate();
+		return errorTime;
+	}
+	
+	@Override
+	public HttpStatus getHttpStatus() {
+		return this.httpStatus;
 	}
 
 }
