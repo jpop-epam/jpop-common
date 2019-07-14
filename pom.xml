@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jpop.epam</groupId>
+	<artifactId>jpop-common</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>JPOP Common Service</name>
+	<description>Common service dependency for other Rest API applications</description>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencies>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<configuration>
+						<groupId>com.jpop.epam</groupId>
+						<artifactId>jpop-common</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+						<packaging>jar</packaging>
+						<!-- <file>${user.home}/.m2/localRepo/jpop-common-0.0.1-SNAPSHOT.jar</file> -->
+						<generatePom>true</generatePom>
+						<!-- <outputDirectory>${user.home}/.m2/localRepo/</outputDirectory> -->
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
