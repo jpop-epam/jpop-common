@@ -28,4 +28,7 @@ bin/*
 .classpath
 .project
 .gradle/*
+target/
+target/*
+
 
