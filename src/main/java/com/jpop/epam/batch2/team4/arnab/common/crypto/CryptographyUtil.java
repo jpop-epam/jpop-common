@@ -1,4 +1,4 @@
-package com.jpop.epam.common.crypto;
+package com.jpop.epam.batch2.team4.arnab.common.crypto;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -12,7 +12,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.jpop.epam.common.service.exception.CryptographyException;
+import com.jpop.epam.batch2.team4.arnab.common.service.exception.CryptographyException;
 
 public final class CryptographyUtil {
 	private static final Logger LOG = LoggerFactory.getLogger(CryptographyUtil.class);

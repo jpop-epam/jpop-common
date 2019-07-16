@@ -1,4 +1,4 @@
-package com.jpop.epam.common.constants;
+package com.jpop.epam.batch2.team4.arnab.common.constants;
 
 public enum UserRoles {
 	BASIC_USER("U", "Basic User", "Basic Users have access to their own profile. They can update their own info only."),

@@ -1,13 +1,13 @@
-package com.jpop.epam.common.service.advice;
+package com.jpop.epam.batch2.team4.arnab.common.service.advice;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.jpop.epam.common.constants.ApplicationCommonConstants;
-import com.jpop.epam.common.service.exception.ApplicationError;
-import com.jpop.epam.common.service.model.ErrorObject;
+import com.jpop.epam.batch2.team4.arnab.common.constants.ApplicationCommonConstants;
+import com.jpop.epam.batch2.team4.arnab.common.service.exception.ApplicationError;
+import com.jpop.epam.batch2.team4.arnab.common.service.model.ErrorObject;
 
 @RestControllerAdvice
 public class JPOPExceptionAdvice {

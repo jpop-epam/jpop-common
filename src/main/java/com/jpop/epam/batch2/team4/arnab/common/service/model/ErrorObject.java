@@ -1,4 +1,4 @@
-package com.jpop.epam.common.service.model;
+package com.jpop.epam.batch2.team4.arnab.common.service.model;
 
 import java.io.Serializable;
 
